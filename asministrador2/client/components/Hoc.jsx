@@ -3,6 +3,7 @@ import GestorTareas from './Tareas/GestorTareas.jsx'
 import GestorProyectos from './Proyectos/GestorProyectos.jsx'
 import Titulo from './componentTitulo.jsx'
 import Navegacion from './componentNavbar.jsx'
+import InputComp from './componentInput.jsx';
 
 const Hoc = React.createClass({
     render() {
@@ -17,7 +18,8 @@ const Hoc = React.createClass({
         ];
         return (
             <div className="container">
-                <Navegacion/>
+                <Navegacion />
+                <InputComp/>
                 <h1>Titulo</h1>
                 <a className="btn btn-floating pulse"><i className="material-icons">menu</i></a>
                 <Titulo nombre="Arnau" />
